@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Vantix Digital Studios · STATION ZERO, juego gratis de acción pixel art</title>
-<meta name="description" content="Vantix Digital Studios, estudio indie de Bilbao. STATION ZERO: juego gratis de acción y plataformas en pixel art, 16 niveles y 4 jefes. Descárgalo para PC o juega en móvil e iPad.">
+<meta name="description" content="Vantix Digital Studios, estudio indie de Bilbao. STATION ZERO: juego gratis de acción y plataformas en pixel art, 16 niveles y 4 jefes. Descárgalo para PC o Mac, o juega en móvil e iPad.">
 <meta name="author" content="Vantix Digital Studios">
 <meta property="og:type" content="website">
 <meta property="og:title" content="STATION ZERO · Vantix Digital Studios">
-<meta property="og:description" content="A dead station. A stolen core. Only you are still awake. Free on PC, iPhone, Android and iPad.">
+<meta property="og:description" content="A dead station. A stolen core. Only you are still awake. Free on PC, Mac, iPhone, Android and iPad.">
 <meta property="og:image" content="https://vantix-digital-studios.github.io/img/og.jpg">
 <meta property="og:url" content="https://vantix-digital-studios.github.io/">
 <link rel="canonical" href="https://vantix-digital-studios.github.io/">
@@ -19,7 +19,7 @@
 {"@context":"https://schema.org","@graph":[
  {"@type":"Organization","@id":"https://vantix-digital-studios.github.io/#org","name":"Vantix Digital Studios","alternateName":["Vantix Digital Estudios","Vantix Studios","Vantix"],"url":"https://vantix-digital-studios.github.io/","logo":"https://vantix-digital-studios.github.io/apple-touch-icon.png","description":"Estudio indie de videojuegos de Bilbao. Indie game studio from Bilbao, Spain.","address":{"@type":"PostalAddress","addressLocality":"Bilbao","addressCountry":"ES"},"sameAs":["https://vantix-digital-studios.itch.io/","https://github.com/Vantix-Digital-Studios"]},
  {"@type":"WebSite","name":"Vantix Digital Studios","url":"https://vantix-digital-studios.github.io/","publisher":{"@id":"https://vantix-digital-studios.github.io/#org"}},
- {"@type":"VideoGame","name":"STATION ZERO","url":"https://vantix-digital-studios.github.io/","image":"https://vantix-digital-studios.github.io/img/og.jpg","author":{"@id":"https://vantix-digital-studios.github.io/#org"},"publisher":{"@id":"https://vantix-digital-studios.github.io/#org"},"genre":["Action","Platformer"],"gamePlatform":["Windows","Web browser","iOS","Android"],"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}
+ {"@type":"VideoGame","name":"STATION ZERO","url":"https://vantix-digital-studios.github.io/","image":"https://vantix-digital-studios.github.io/img/og.jpg","author":{"@id":"https://vantix-digital-studios.github.io/#org"},"publisher":{"@id":"https://vantix-digital-studios.github.io/#org"},"genre":["Action","Platformer"],"gamePlatform":["Windows","macOS","Web browser","iOS","Android"],"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}
 ]}
 </script>
 <link rel="icon" type="image/png" href="favicon.png">
@@ -112,7 +112,7 @@ h3 { margin: 0 0 8px; font: 700 21px/1.25 var(--body); }
 /* consigue el juego */
 .get { background: radial-gradient(ellipse at 50% 0%, #2a1a26 0%, var(--bg) 60%); text-align: center; }
 .get .lead { margin: 0 auto; }
-.platforms { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 36px; text-align: left; }
+.platforms { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; margin-top: 36px; text-align: left; }
 .platform { background: var(--panel); border: 1px solid var(--edge); padding: 24px; display: grid; gap: 12px; align-content: start; }
 .platform .ic { width: 46px; height: 46px; color: var(--accent); }
 .platform h3 { margin: 0; }
@@ -166,6 +166,7 @@ footer .wrap { padding-block: 28px 36px; display: flex; flex-wrap: wrap; gap: 14
 .forum-box { margin-top: 26px; background: var(--panel); border: 1px solid var(--edge); padding: 22px; min-height: 160px; }
 .forum-off { margin: 0; color: var(--dim); text-align: center; padding: 44px 0; }
 @media (max-width: 640px) { .forum-box { padding: 12px; } }
+@media (max-width: 1180px) and (min-width: 901px) { .platforms { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 </style>
 </head>
 <body>
@@ -199,7 +200,7 @@ footer .wrap { padding-block: 28px 36px; display: flex; flex-wrap: wrap; gap: 14
         <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 4l13 8-13 8z"/></svg>
         <span lang="en">Play now</span><span lang="es">Jugar ya</span>
       </a>
-      <span class="free"><span lang="en">Free · PC, iPhone, Android and iPad</span><span lang="es">Gratis · PC, iPhone, Android e iPad</span></span>
+      <span class="free"><span lang="en">Free · PC, Mac, iPhone, Android and iPad</span><span lang="es">Gratis · PC, Mac, iPhone, Android e iPad</span></span>
     </div>
   </div>
 
@@ -273,6 +274,13 @@ footer .wrap { padding-block: 28px 36px; display: flex; flex-wrap: wrap; gap: 14
           
         </article>
         <article class="platform">
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M2 5h20v11H2zM4 7v7h16V7zM1 17h22v2H1z"/></svg>
+          <h3>Mac</h3>
+          <p><span lang="en">Download for Mac (Apple Silicon and Intel). Unzip and open.</span><span lang="es">Descarga para Mac (Apple Silicon e Intel). Descomprime y abre.</span></p>
+          <a class="go" href="downloads/StationZero-Mac.zip" download data-goatcounter-click="descarga-mac" data-goatcounter-title="Descarga Mac"><span lang="en">Download</span><span lang="es">Descargar</span></a>
+          <span class="meta">macOS 10.12+ · 54 MB</span>
+        </article>
+        <article class="platform">
           <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 2h10v20H7zM9 4v14h6V4zM11 19h2v1h-2z"/></svg>
           <h3><span lang="en">iPhone · Android</span><span lang="es">iPhone · Android</span></h3>
           <p><span lang="en">Play in your phone's browser with touch controls. Turn your phone sideways.</span><span lang="es">Juega en el navegador del móvil con controles táctiles. Pon el móvil en horizontal.</span></p>
@@ -292,12 +300,14 @@ footer .wrap { padding-block: 28px 36px; display: flex; flex-wrap: wrap; gap: 14
         <summary><span lang="en">System requirements and installation</span><span lang="es">Requisitos e instalación</span></summary>
         <dl>
           <dt>PC</dt><dd><span lang="en">Windows 10/11 64-bit · 4 GB RAM · OpenGL 3.3 graphics · 150 MB</span><span lang="es">Windows 10/11 de 64 bits · 4 GB de RAM · gráfica OpenGL 3.3 · 150 MB</span></dd>
+          <dt>Mac</dt><dd><span lang="en">macOS 10.12 or later · Apple Silicon or Intel · 200 MB</span><span lang="es">macOS 10.12 o posterior · Apple Silicon o Intel · 200 MB</span></dd>
           <dt><span lang="en">Mobile / iPad</span><span lang="es">Móvil / iPad</span></dt><dd><span lang="en">Up-to-date Safari or Chrome · first load about 37 MB</span><span lang="es">Safari o Chrome actualizado · primera carga de unos 37 MB</span></dd>
           <dt><span lang="en">Controls</span><span lang="es">Controles</span></dt><dd><span lang="en">Keyboard, gamepad or touch</span><span lang="es">Teclado, mando o táctil</span></dd>
         </dl>
         <ol>
           <li><span lang="en">Unzip the file (right click → Extract all) and open StationZero.exe.</span><span lang="es">Descomprime el archivo (clic derecho → Extraer todo) y abre StationZero.exe.</span></li>
           <li><span lang="en">If Windows shows "Windows protected your PC", click More info, then Run anyway. It appears because the game isn't digitally signed.</span><span lang="es">Si Windows muestra «Windows protegió su PC», pulsa Más información y luego Ejecutar de todas formas. Aparece porque el juego no está firmado digitalmente.</span></li>
+          <li><span lang="en">Mac: unzip the file and open STATION ZERO. If macOS says it can't verify the developer, go to System Settings → Privacy &amp; Security, scroll down and click Open Anyway (or right click the app → Open).</span><span lang="es">Mac: descomprime el archivo y abre STATION ZERO. Si macOS dice que no puede verificar el desarrollador, ve a Ajustes del Sistema → Privacidad y seguridad, baja y pulsa Abrir igualmente (o clic derecho en la app → Abrir).</span></li>
         </ol>
       </details>
     </div>

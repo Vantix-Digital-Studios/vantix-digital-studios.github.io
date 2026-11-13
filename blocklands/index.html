@@ -2138,7 +2138,7 @@ function frame(now){
     camera.position.set(fx,fy,fz); camera.lookAt(s.x,Math.max(s.h,SEA)+2,s.z);
   } else { fx=P.x; fy=P.y; fz=P.z }
   const pend=updateChunks(fx,fz,state==='title'?10:(lastPend>30?22:7)); lastPend=pend;
-  const ld=$('load'); ld.hidden=!pend; if(pend) ld.textContent='Generando terreno… '+pend;
+  $('load').hidden=true;
   if(state==='play'){
     const menus=!$('inv').hidden||!$('pause').hidden;
     if(!menus){ for(let i=0;i<nSub&&state==='play'&&$('inv').hidden&&$('pause').hidden;i++){updatePlayer(dt);interact(dt);spawnMobs(dt);updateMobs(dt);updateDrops(dt)} }
